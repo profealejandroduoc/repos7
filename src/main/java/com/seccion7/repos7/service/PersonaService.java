@@ -40,4 +40,8 @@ public class PersonaService {
         personaRepository.delete(id);
         return "Persona eliminada";
     }
+
+    public Persona buscarporrut(String rut) {
+       return personaRepository.readbyRut(rut);
+    }
 }
